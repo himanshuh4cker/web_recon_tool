@@ -1,0 +1,164 @@
+{
+  "subdomain": {
+    "status": "success",
+    "module": "subdomain",
+    "domain": "qrplates.in",
+    "crtsh": {
+      "status": "success",
+      "source": "crt.sh",
+      "domain": "qrplates.in",
+      "subdomains": [
+        "qrplates.in",
+        "www.qrplates.in"
+      ],
+      "count": 2,
+      "error": null
+    },
+    "dns_bruteforce": {
+      "status": "success",
+      "source": "dns_bruteforce",
+      "domain": "qrplates.in",
+      "subdomains": [],
+      "count": 0,
+      "wildcard_detected": true,
+      "wildcard_ips": [
+        "52.66.132.51"
+      ],
+      "note": "Wildcard DNS detected. DNS brute-force results were skipped to prevent false positives.",
+      "error": null
+    },
+    "unique_subdomains": [
+      "qrplates.in",
+      "www.qrplates.in"
+    ],
+    "count": 2,
+    "note": "Wildcard DNS detected for target. Unique subdomain list prioritizes crt.sh entries.",
+    "error": null
+  },
+  "portscan": {
+    "status": "success",
+    "module": "portscan",
+    "domain": "qrplates.in",
+    "scan_profile": "fast",
+    "scanner": "nmap",
+    "open_ports": [
+      {
+        "host": "52.66.132.51",
+        "port": 22,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "ssh",
+        "product": "",
+        "version": "",
+        "extrainfo": ""
+      },
+      {
+        "host": "52.66.132.51",
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "",
+        "version": "",
+        "extrainfo": ""
+      },
+      {
+        "host": "52.66.132.51",
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "https",
+        "product": "",
+        "version": "",
+        "extrainfo": ""
+      }
+    ],
+    "count": 3,
+    "note": "",
+    "error": null
+  },
+  "techdetect": {
+    "status": "success",
+    "module": "techdetect",
+    "domain": "qrplates.in",
+    "target_url": "https://qrplates.in",
+    "technologies": {
+      "web-servers": [
+        "Apache"
+      ],
+      "web-frameworks": [
+        "Twitter Bootstrap"
+      ],
+      "javascript-frameworks": [
+        "jQuery"
+      ]
+    },
+    "error": null
+  },
+  "headers": {
+    "status": "success",
+    "module": "headers",
+    "domain": "qrplates.in",
+    "target_url": "https://qrplates.in",
+    "headers": {
+      "Content-Security-Policy": {
+        "present": false,
+        "value": "Missing"
+      },
+      "X-Frame-Options": {
+        "present": false,
+        "value": "Missing"
+      },
+      "Strict-Transport-Security": {
+        "present": false,
+        "value": "Missing"
+      },
+      "X-Content-Type-Options": {
+        "present": false,
+        "value": "Missing"
+      },
+      "Referrer-Policy": {
+        "present": false,
+        "value": "Missing"
+      }
+    },
+    "missing_headers": [
+      "Content-Security-Policy",
+      "X-Frame-Options",
+      "Strict-Transport-Security",
+      "X-Content-Type-Options",
+      "Referrer-Policy"
+    ],
+    "error": null
+  },
+  "whois_lookup": {
+    "status": "success",
+    "module": "whois_lookup",
+    "domain": "qrplates.in",
+    "whois": {
+      "domain_name": "qrplates.in",
+      "registrar": "GoDaddy",
+      "registrar_url": "www.godaddy.com",
+      "registrar_iana": "146",
+      "updated_date": "2026-01-27T11:41:26.410000+00:00",
+      "creation_date": "2026-01-22T11:40:45.390000+00:00",
+      "expiration_date": "2027-01-22T11:40:45.390000+00:00",
+      "name_servers": [
+        "ns50.domaincontrol.com",
+        "ns49.domaincontrol.com"
+      ],
+      "organization": "",
+      "state": "Madhya Pradesh",
+      "status": [
+        "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+        "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited",
+        "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+        "clientRenewProhibited https://icann.org/epp#clientRenewProhibited"
+      ],
+      "emails": "reg_admin@godaddy.com",
+      "country": "IN",
+      "dnssec": "unsigned"
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Recon Report - example.com</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    .container {
+      width: 92%;
+      max-width: 1200px;
+      margin: 24px auto;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+    header {
+      background: #0b3d91;
+      color: #ffffff;
+      padding: 24px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    header p {
+      margin: 8px 0 0;
+      font-size: 0.95rem;
+      opacity: 0.95;
+    }
+    section {
+      padding: 20px 24px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    section:last-child {
+      border-bottom: none;
+    }
+    h2 {
+      margin-top: 0;
+      color: #0f172a;
+      font-size: 1.25rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+      word-break: break-word;
+    }
+    th {
+      background: #eef2ff;
+    }
+    .missing {
+      background: #ffe4e6;
+      color: #9f1239;
+      font-weight: 700;
+    }
+    .ok {
+      background: #dcfce7;
+      color: #166534;
+      font-weight: 700;
+    }
+    .error {
+      color: #b91c1c;
+      font-weight: 700;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.35rem;
+      }
+      th, td {
+        font-size: 0.85rem;
+        padding: 8px;
+      }
+      section {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Web Recon Report</h1>
+      <p>Target: example.com<br/>Generated: 2026-03-22 19:51:31 UTC</p>
+    </header>
+
+    <section>
+      <h2>Subdomains</h2>
+      <table><thead><tr><th>#</th><th>Subdomain</th></tr></thead><tbody><tr><td>1</td><td>dev.example.com</td></tr><tr><td>2</td><td>example.com</td></tr><tr><td>3</td><td>m.example.com</td></tr><tr><td>4</td><td>products.example.com</td></tr><tr><td>5</td><td>support.example.com</td></tr><tr><td>6</td><td>www.example.com</td></tr></tbody></table>
+    </section>
+
+    <section>
+      <h2>Open Ports</h2>
+      <table><thead><tr><th>Host</th><th>Port</th><th>Protocol</th><th>State</th><th>Service</th></tr></thead><tbody><tr><td>104.18.27.120</td><td>80</td><td>tcp</td><td>open</td><td>http   socket-fallback</td></tr><tr><td>104.18.27.120</td><td>443</td><td>tcp</td><td>open</td><td>https   socket-fallback</td></tr><tr><td>104.18.27.120</td><td>8080</td><td>tcp</td><td>open</td><td>http-alt   socket-fallback</td></tr><tr><td>104.18.27.120</td><td>8443</td><td>tcp</td><td>open</td><td>unknown   socket-fallback</td></tr></tbody></table>
+    </section>
+
+    <section>
+      <h2>HTTP Security Headers</h2>
+      <table><thead><tr><th>Header</th><th>Status</th><th>Value</th></tr></thead><tbody><tr><td>Content-Security-Policy</td><td class="missing">Missing</td><td>Missing</td></tr><tr><td>X-Frame-Options</td><td class="missing">Missing</td><td>Missing</td></tr><tr><td>Strict-Transport-Security</td><td class="missing">Missing</td><td>Missing</td></tr><tr><td>X-Content-Type-Options</td><td class="missing">Missing</td><td>Missing</td></tr><tr><td>Referrer-Policy</td><td class="missing">Missing</td><td>Missing</td></tr></tbody></table>
+    </section>
+
+    <section>
+      <h2>Technology Stack</h2>
+      <p>No technologies detected.</p>
+    </section>
+
+    <section>
+      <h2>WHOIS Information</h2>
+      <p>No WHOIS data available.</p>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Recon Report - qrplates.in</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    .container {
+      width: 92%;
+      max-width: 1200px;
+      margin: 24px auto;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+    header {
+      background: #0b3d91;
+      color: #ffffff;
+      padding: 24px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    header p {
+      margin: 8px 0 0;
+      font-size: 0.95rem;
+      opacity: 0.95;
+    }
+    section {
+      padding: 20px 24px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    section:last-child {
+      border-bottom: none;
+    }
+    h2 {
+      margin-top: 0;
+      color: #0f172a;
+      font-size: 1.25rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+      word-break: break-word;
+    }
+    th {
+      background: #eef2ff;
+    }
+    .missing {
+      background: #ffe4e6;
+      color: #9f1239;
+      font-weight: 700;
+    }
+    .ok {
+      background: #dcfce7;
+      color: #166534;
+      font-weight: 700;
+    }
+    .error {
+      color: #b91c1c;
+      font-weight: 700;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.35rem;
+      }
+      th, td {
+        font-size: 0.85rem;
+        padding: 8px;
+      }
+      section {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Web Recon Report</h1>
+      <p>Target: qrplates.in<br/>Generated: 2026-03-22 19:53:36 UTC</p>
+    </header>
+
+    <section>
+      <h2>Subdomains</h2>
+      <table><thead><tr><th>#</th><th>Subdomain</th></tr></thead><tbody><tr><td>1</td><td>qrplates.in</td></tr><tr><td>2</td><td>www.qrplates.in</td></tr></tbody></table>
+    </section>
+
+    <section>
+      <h2>Open Ports</h2>
+      <table><thead><tr><th>Host</th><th>Port</th><th>Protocol</th><th>State</th><th>Service</th></tr></thead><tbody><tr><td>52.66.132.51</td><td>22</td><td>tcp</td><td>open</td><td>ssh</td></tr><tr><td>52.66.132.51</td><td>80</td><td>tcp</td><td>open</td><td>http</td></tr><tr><td>52.66.132.51</td><td>443</td><td>tcp</td><td>open</td><td>https</td></tr></tbody></table>
+    </section>
+
+    <section>
+      <h2>HTTP Security Headers</h2>
+      <table><thead><tr><th>Header</th><th>Status</th><th>Value</th></tr></thead><tbody><tr><td>Content-Security-Policy</td><td class="missing">Missing</td><td>Missing</td></tr><tr><td>X-Frame-Options</td><td class="missing">Missing</td><td>Missing</td></tr><tr><td>Strict-Transport-Security</td><td class="missing">Missing</td><td>Missing</td></tr><tr><td>X-Content-Type-Options</td><td class="missing">Missing</td><td>Missing</td></tr><tr><td>Referrer-Policy</td><td class="missing">Missing</td><td>Missing</td></tr></tbody></table>
+    </section>
+
+    <section>
+      <h2>Technology Stack</h2>
+      <table><thead><tr><th>Category</th><th>Technologies</th></tr></thead><tbody><tr><td>web-servers</td><td>Apache</td></tr><tr><td>web-frameworks</td><td>Twitter Bootstrap</td></tr><tr><td>javascript-frameworks</td><td>jQuery</td></tr></tbody></table>
+    </section>
+
+    <section>
+      <h2>WHOIS Information</h2>
+      <table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>country</td><td>IN</td></tr><tr><td>creation_date</td><td>2026-01-22T11:40:45.390000+00:00</td></tr><tr><td>dnssec</td><td>unsigned</td></tr><tr><td>domain_name</td><td>qrplates.in</td></tr><tr><td>emails</td><td>reg_admin@godaddy.com</td></tr><tr><td>expiration_date</td><td>2027-01-22T11:40:45.390000+00:00</td></tr><tr><td>name_servers</td><td>ns50.domaincontrol.com, ns49.domaincontrol.com</td></tr><tr><td>organization</td><td></td></tr><tr><td>registrar</td><td>GoDaddy</td></tr><tr><td>registrar_iana</td><td>146</td></tr><tr><td>registrar_url</td><td>www.godaddy.com</td></tr><tr><td>state</td><td>Madhya Pradesh</td></tr><tr><td>status</td><td>clientTransferProhibited https://icann.org/epp#clientTransferProhibited, clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited, clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited, clientRenewProhibited https://icann.org/epp#clientRenewProhibited</td></tr><tr><td>updated_date</td><td>2026-01-27T11:41:26.410000+00:00</td></tr></tbody></table>
+    </section>
+  </div>
+</body>
+</html>

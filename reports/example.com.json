@@ -1,0 +1,153 @@
+{
+  "subdomain": {
+    "status": "success",
+    "module": "subdomain",
+    "domain": "example.com",
+    "crtsh": {
+      "status": "success",
+      "source": "crt.sh",
+      "domain": "example.com",
+      "subdomains": [
+        "dev.example.com",
+        "example.com",
+        "m.example.com",
+        "products.example.com",
+        "support.example.com",
+        "www.example.com"
+      ],
+      "count": 6,
+      "error": null
+    },
+    "dns_bruteforce": {
+      "status": "success",
+      "source": "dns_bruteforce",
+      "domain": "example.com",
+      "subdomains": [
+        {
+          "hostname": "www.example.com",
+          "ip": "104.18.26.120",
+          "resolved": true
+        }
+      ],
+      "count": 1,
+      "wildcard_detected": false,
+      "wildcard_ips": [],
+      "note": "DNS brute-force completed without wildcard DNS indicators.",
+      "error": null
+    },
+    "unique_subdomains": [
+      "dev.example.com",
+      "example.com",
+      "m.example.com",
+      "products.example.com",
+      "support.example.com",
+      "www.example.com"
+    ],
+    "count": 6,
+    "note": "",
+    "error": null
+  },
+  "portscan": {
+    "status": "success",
+    "module": "portscan",
+    "domain": "example.com",
+    "scan_profile": "fast",
+    "scanner": "socket-fallback",
+    "open_ports": [
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "",
+        "version": "",
+        "extrainfo": "socket-fallback",
+        "host": "104.18.27.120"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "https",
+        "product": "",
+        "version": "",
+        "extrainfo": "socket-fallback",
+        "host": "104.18.27.120"
+      },
+      {
+        "port": 8080,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http-alt",
+        "product": "",
+        "version": "",
+        "extrainfo": "socket-fallback",
+        "host": "104.18.27.120"
+      },
+      {
+        "port": 8443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "unknown",
+        "product": "",
+        "version": "",
+        "extrainfo": "socket-fallback",
+        "host": "104.18.27.120"
+      }
+    ],
+    "count": 4,
+    "note": "nmap package/binary not available. Used fast socket fallback scan over common ports. Install python-nmap and nmap for full top-port and service/version detection.",
+    "error": null
+  },
+  "techdetect": {
+    "status": "error",
+    "module": "techdetect",
+    "domain": "example.com",
+    "target_url": "",
+    "technologies": {},
+    "error": "builtwith is not installed: No module named 'builtwith'"
+  },
+  "headers": {
+    "status": "success",
+    "module": "headers",
+    "domain": "example.com",
+    "target_url": "https://example.com",
+    "headers": {
+      "Content-Security-Policy": {
+        "present": false,
+        "value": "Missing"
+      },
+      "X-Frame-Options": {
+        "present": false,
+        "value": "Missing"
+      },
+      "Strict-Transport-Security": {
+        "present": false,
+        "value": "Missing"
+      },
+      "X-Content-Type-Options": {
+        "present": false,
+        "value": "Missing"
+      },
+      "Referrer-Policy": {
+        "present": false,
+        "value": "Missing"
+      }
+    },
+    "missing_headers": [
+      "Content-Security-Policy",
+      "X-Frame-Options",
+      "Strict-Transport-Security",
+      "X-Content-Type-Options",
+      "Referrer-Policy"
+    ],
+    "error": null
+  },
+  "whois_lookup": {
+    "status": "error",
+    "module": "whois_lookup",
+    "domain": "example.com",
+    "whois": {},
+    "error": "python-whois is not installed: No module named 'whois'"
+  }
+}
